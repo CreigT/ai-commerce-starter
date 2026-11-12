@@ -1,0 +1,11 @@
+{
+  "name": "autonomous-ai-commerce",
+  "version": "1.0.0",
+  "description": "Simple, production-ready Autonomous AI Commerce SaaS - deployable to Vercel",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site - ready for Vercel'"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

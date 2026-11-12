@@ -1,0 +1,36 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; background: #0f0f1a; color: #e0e0ff; line-height: 1.6; }
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 1rem 5%; background: #1a1a2e; border-bottom: 1px solid #333; }
+.logo { font-size: 1.5rem; font-weight: 700; color: #00d4ff; }
+.navbar ul { display: flex; list-style: none; gap: 2rem; }
+.navbar a { color: #ccc; text-decoration: none; transition: color 0.3s; }
+.navbar a:hover, .cta { color: #00d4ff; }
+.hero { text-align: center; padding: 8rem 2rem; background: linear-gradient(135deg, #0f0f1a, #1a1a3e); }
+.hero h1 { font-size: 3.5rem; margin-bottom: 1rem; background: linear-gradient(90deg, #00d4ff, #7b2cbf); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.hero p { font-size: 1.3rem; margin-bottom: 2rem; color: #aaa; }
+.btn-primary, .btn-secondary, .btn { display: inline-block; padding: 0.8rem 2rem; margin: 0.5rem; border-radius: 50px; text-decoration: none; font-weight: 600; transition: transform 0.2s; }
+.btn-primary { background: #00d4ff; color: #000; }
+.btn-secondary { background: transparent; border: 2px solid #00d4ff; color: #00d4ff; }
+.btn:hover { transform: translateY(-2px); }
+.features, .pricing { padding: 5rem 10%; text-align: center; }
+.grid, .plans { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem; }
+.card, .plan { background: #1a1a2e; padding: 2rem; border-radius: 12px; border: 1px solid #333; }
+.plan.featured { border-color: #00d4ff; transform: scale(1.05); }
+.price { font-size: 2.5rem; color: #00d4ff; margin: 1rem 0; }
+.product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; padding: 2rem; }
+.product-card { background: #1a1a2e; border-radius: 12px; overflow: hidden; border: 1px solid #333; }
+.product-card img { width: 100%; height: 200px; object-fit: cover; background: #333; }
+.product-info { padding: 1.5rem; }
+.agent-layers { display: grid; gap: 1.5rem; padding: 2rem; }
+.agent-card { background: #1a1a2e; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #00d4ff; }
+.status { color: #00ff9d; font-weight: 600; }
+.chat-container { max-width: 800px; margin: 2rem auto; background: #1a1a2e; border-radius: 12px; overflow: hidden; }
+.messages { height: 400px; overflow-y: auto; padding: 1.5rem; }
+.message { margin-bottom: 1rem; padding: 0.8rem 1.2rem; border-radius: 18px; max-width: 80%; }
+.message.ai { background: #2a2a4e; margin-right: auto; }
+.message.user { background: #00d4ff; color: #000; margin-left: auto; }
+.input-area { display: flex; padding: 1rem; border-top: 1px solid #333; }
+.input-area input { flex: 1; padding: 0.8rem; border: none; background: #0f0f1a; color: white; border-radius: 20px; margin-right: 0.5rem; }
+.input-area button { padding: 0.8rem 1.5rem; background: #00d4ff; border: none; border-radius: 20px; font-weight: 600; cursor: pointer; }
+footer { text-align: center; padding: 2rem; color: #666; border-top: 1px solid #333; margin-top: 4rem; }
+@media (max-width: 768px) { .hero h1 { font-size: 2.5rem; } .navbar ul { gap: 1rem; } }
